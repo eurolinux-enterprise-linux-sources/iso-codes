@@ -1,7 +1,7 @@
 Name:        iso-codes
 Summary:       ISO code lists and translations
 Version:       3.46
-Release:       1%{?dist}
+Release:       2%{?dist}
 License:       LGPLv2+
 Group:        System Environment/Base
 URL:        http://alioth.debian.org/projects/pkg-isocodes/
@@ -47,6 +47,9 @@ make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 %{_datadir}/pkgconfig/iso-codes.pc
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.46-2
+- Mass rebuild 2013-12-27
+
 * Mon Sep 02 2013 Parag Nemade <pnemade AT redhat DOT com> - 3.46-1
 - Update to 3.46
 
